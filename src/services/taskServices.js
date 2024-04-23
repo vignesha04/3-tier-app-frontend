@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiUrl = process."http://52.66.211.142:30008/api/tasks";
+const apiUrl = "http://52.66.211.142:30008/api/tasks";
 console.log(apiUrl)
 export function getTasks() {
     return axios.get(apiUrl);
