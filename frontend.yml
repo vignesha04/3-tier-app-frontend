@@ -4,16 +4,16 @@ metadata:
   name: frontend
   namespace: three-tier
   labels:
-    role: frontend
+    app: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      role: frontend
+      app: frontend
   template:
     metadata:
       labels:
-        role: frontend
+        app: frontend
     spec:
       containers:
       - name: frontend
@@ -33,5 +33,5 @@ spec:
     protocol: TCP
     nodePort: 30005
   selector:
-    role: frontend
+    app: frontend
   type: NodePort
