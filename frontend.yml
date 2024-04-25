@@ -4,16 +4,16 @@ metadata:
   name: frontend
   namespace: three-tier
   labels:
-    app: frontend
+    role: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      role: frontend
   template:
     metadata:
       labels:
-        app: frontend
+        role: frontend
     spec:
       containers:
       - name: frontend
