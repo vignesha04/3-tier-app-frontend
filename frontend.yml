@@ -33,5 +33,5 @@ spec:
     protocol: TCP
     nodePort: 30005
   selector:
-    app: frontend
+    role: frontend
   type: NodePort
